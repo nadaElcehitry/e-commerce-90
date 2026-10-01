@@ -3,7 +3,7 @@
 
 export async function getAllProductReview(productId:string) {
     try {
-        const response = await fetch(`${process.env.BASE_URL}/products/${productId}/reviews`)
+        const response = await fetch(`https://ecommerce.routemisr.com/api/v1/products/${productId}/reviews`)
         if(!response.ok){
             throw new Error("Something occure");
         

@@ -8,7 +8,7 @@ export async function CreateReviewProduct({ productId, payload }: { productId: s
     if (!token) {
         throw new Error('Login first please!')
     }
-    const response = await fetch(`${process.env.BASE_URL}/products/${productId}/reviews`, {
+    const response = await fetch(`https://ecommerce.routemisr.com/api/v1/products/${productId}/reviews`, {
         method: 'POST',
         headers: {
             token:String(token) ,

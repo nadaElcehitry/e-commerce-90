@@ -1,6 +1,6 @@
 export async function getBrands() {
     try {
-        const response = await fetch(`${process.env.BASE_URL}/brands`)
+        const response = await fetch(`https://ecommerce.routemisr.com/api/v1/brands`)
         if (!response.ok) {
             throw new Error("Something occure");
 

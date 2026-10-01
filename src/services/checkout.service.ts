@@ -12,7 +12,7 @@ export async function CheckOutSession(cartId: string, formdata: Checkout) {
     if (!token) {
         throw new Error('Login first please!')
     }
-    const response = await fetch(`${process.env.BASE_URL}/orders/checkout-session/${cartId}?url=${process.env.DOMAIN}`, {
+    const response = await fetch(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=${process.env.DOMAIN}`, {
         method: 'POST',
         headers: {
             token:String(token) ,

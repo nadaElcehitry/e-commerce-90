@@ -8,7 +8,7 @@ export async function addProductToWhislist(productId: string) {
     if (!token) {
         throw new Error('Login first please!')
     }
-    const response = await fetch(`${process.env.BASE_URL}/wishlist`, {
+    const response = await fetch(`https://ecommerce.routemisr.com/api/v1/wishlist`, {
         method: 'POST',
         headers: {
             token:String(token) ,

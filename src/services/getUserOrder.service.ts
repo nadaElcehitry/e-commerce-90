@@ -7,7 +7,7 @@ export async function  getUserOrder(userId:string){
      if(!token){
         throw new Error('Login first please!')
      }
-    const response =  await fetch(`${process.env.BASE_URL}/orders/user/${userId}`,{
+    const response =  await fetch(`https://ecommerce.routemisr.com/api/v1/orders/user/${userId}`,{
         method:'GET',
         headers:{
             token:String(token) ,

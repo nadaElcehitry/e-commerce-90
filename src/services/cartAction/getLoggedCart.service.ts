@@ -10,7 +10,7 @@ export async function  getCart(){
 toast.add({
                 description: "please login first"
             });     }
-    const response =  await fetch(`${process.env.BASE_URL}/cart`,{
+    const response =  await fetch(`https://ecommerce.routemisr.com/api/v1/cart`,{
         method:'GET',
         headers:{
             token:String(token) ,
