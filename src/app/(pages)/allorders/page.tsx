@@ -1,3 +1,4 @@
+"use server"
 import { CartItem, IUserOrder } from "@/interface/userOrder.interface";
 import { getUserOrder } from "@/services/getUserOrder.service"
 import { getMyID } from "@/Utilities/getMyId.utilities";
