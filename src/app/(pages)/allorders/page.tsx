@@ -16,7 +16,7 @@ import { MdOutlineShoppingCartCheckout } from "react-icons/md";
 import { FaBox } from "react-icons/fa";
 import { toast } from "@/components/ui/toast";
 
-export default async function AllOrders() {
+export default async function allOrders() {
   let userId = await getMyID();
   if (!userId) {
 toast.add({
